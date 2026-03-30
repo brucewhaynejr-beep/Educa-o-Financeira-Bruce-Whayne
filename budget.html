@@ -1,0 +1,199 @@
+<!DOCTYPE html>                                                                                                                                                                                      
+  <html lang="pt-BR">                                                                                                                                                                                  
+  <head>                                                                                                                                                                                               
+      <meta charset="UTF-8">                                                                                                                                                                           
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                                                                           
+      <title>Orçamento - Educação Financeira</title>                                                                                                                                                   
+      <meta name="description" content="Calculadora de orçamento pessoal para organizar suas finanças">                                                                                                
+      <link rel="stylesheet" href="css/style.css">                                                                                                                                                     
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">                                                                              
+  </head>                                                                                                                                                                                              
+  <body>                                                                                                                                                                                               
+      <header class="header">                                                                                                                                                                          
+          <nav class="nav">                                                                                                                                                                            
+              <div class="nav-container">
+                  <div class="nav-logo">                                                                                                                                                               
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                                                                  
+                          <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#10b981"/>                                                                                                                        
+                          <path d="M2 17L12 22L22 17" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                               
+                          <path d="M2 12L12 17L22 12" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>                                                               
+                      </svg>                                                                                                                                                                           
+                      <span class="nav-title">Educação Financeira</span>                                                                                                                               
+                  </div>                                                                                                                                                                               
+                  <ul class="nav-menu">                                                                                                                                                                
+                      <li><a href="index.html" class="nav-link">Início</a></li>                                                                                                                        
+                      <li><a href="budget.html" class="nav-link active">Orçamento</a></li>                                                                                                             
+                      <li><a href="invest.html" class="nav-link">Investimentos</a></li>                                                                                                                
+                      <li><a href="about.html" class="nav-link">Sobre</a></li>                                                                                                                         
+                      <li><a href="contact.html" class="nav-link">Contato</a></li>                                                                                                                     
+                  </ul>                                                                                                                                                                                
+                  <button class="nav-toggle" aria-label="Toggle menu">                                                                                                                                 
+                      <span></span>                                                                                                                                                                    
+                      <span></span>                                                                                                                                                                    
+                      <span></span>                                                                                                                                                                    
+                  </button>                                                                                                                                                                            
+              </div>
+          </nav>                                                                                                                                                                                       
+      </header>   
+                                                                                                                                                                                                       
+      <main>      
+          <section class="hero">                                                                                                                                                                       
+              <div class="hero-content">                                                                                                                                                               
+                  <h1 class="hero-title">Orçamento Pessoal</h1>                                                                                                                                        
+                  <p class="hero-subtitle">Descubra para onde vai seu dinheiro e aprenda a controlar seus gastos mensais.</p>                                                                          
+              </div>                                                                                                                                                                                   
+          </section>                                                                                                                                                                                   
+                                                                                                                                                                                                       
+          <section class="budget-calculator">                                                                                                                                                          
+              <div class="container">
+                  <div class="calc-grid">                                                                                                                                                              
+                      <div class="calc-form">                                                                                                                                                          
+                          <h2>Minhas Finanças</h2>                                                                                                                                                     
+                                                                                                                                                                                                       
+                          <div class="form-group">                                                                                                                                                     
+                              <label for="salary">Salário Mensal (R$)</label>                                                                                                                          
+                              <input type="number" id="salary" placeholder="Ex: 3000" step="0.01" min="0">                                                                                             
+                          </div>                                                                                                                                                                       
+                                                                                                                                                                                                       
+                          <div class="form-group">                                                                                                                                                     
+                              <label for="extra">Renda Extra (R$)</label>
+                              <input type="number" id="extra" placeholder="Ex: 500" step="0.01" min="0">                                                                                               
+                          </div>                                                                                                                                                                       
+                                                                                                                                                                                                       
+                          <div class="expenses-section">                                                                                                                                               
+                              <h3>Despesas Mensais</h3>
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="rent">Aluguel / Moradia (R$)</label>                                                                                                                     
+                                  <input type="number" id="rent" placeholder="Ex: 1200" step="0.01" min="0">                                                                                           
+                              </div>                                                                                                                                                                   
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="food">Alimentação (R$)</label>                                                                                                                           
+                                  <input type="number" id="food" placeholder="Ex: 600" step="0.01" min="0">                                                                                            
+                              </div>                                                                                                                                                                   
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="transport">Transporte (R$)</label>
+                                  <input type="number" id="transport" placeholder="Ex: 300" step="0.01" min="0">                                                                                       
+                              </div>                                                                                                                                                                   
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="health">Saúde (R$)</label>
+                                  <input type="number" id="health" placeholder="Ex: 200" step="0.01" min="0">                                                                                          
+                              </div>                                                                                                                                                                   
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="education">Educação (R$)</label>
+                                  <input type="number" id="education" placeholder="Ex: 150" step="0.01" min="0">                                                                                       
+                              </div>                                                                                                                                                                   
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="leisure">Lazer (R$)</label>                                                                                                                              
+                                  <input type="number" id="leisure" placeholder="Ex: 200" step="0.01" min="0">                                                                                         
+                              </div>                                                                                                                                                                   
+                                                                                                                                                                                                       
+                              <div class="form-group">                                                                                                                                                 
+                                  <label for="other">Outros (R$)</label>
+                                  <input type="number" id="other" placeholder="Ex: 100" step="0.01" min="0">                                                                                           
+                              </div>                                                                                                                                                                   
+                          </div>                                                                                                                                                                       
+                                                                                                                                                                                                       
+                          <button onclick="calculateBudget" class="calc-btn">Calcular Orçamento</button>                                                                                               
+                          <button onclick="resetForm()" class="btn btn-secondary">Limpar</button>
+                      </div>                                                                                                                                                                           
+                  
+                      <div class="calc-results" id="results" style="display: none">                                                                                                                    
+                          <h2>Resultado do Orçamento</h2>
+                                                                                                                                                                                                       
+                          <div class="result-card">
+                              <div class="result-item">                                                                                                                                                
+                                  <span>Receita Total</span>                                                                                                                                           
+                                  <span id="totalIncome" class="highlight-green">R$ 0,00</span>                                                                                                        
+                              </div>                                                                                                                                                                   
+                              <div class="result-item">                                                                                                                                                
+                                  <span>Total de Despesas</span>                                                                                                                                       
+                                  <span id="totalExpenses" class="highlight-red">R$ 0,00</span>                                                                                                        
+                              </div>                                                                                                                                                                   
+                              <div class="result-item result-balance">                                                                                                                                 
+                                  <span>Saldo Mensal</span>                                                                                                                                            
+                                  <span id="balance" class="highlight-bold">R$ 0,00</span>                                                                                                             
+                              </div>                                                                                                                                                                   
+                          </div>                                                                                                                                                                       
+                                                                                                                                                                                                       
+                          <div class="advice-box" id="adviceBox">                                                                                                                                      
+                              <h4>💡 Dica Financeira</h4>
+                              <p id="adviceText">Preencha seus dados e calcule o orçamento para receber dicas personalizadas.</p>                                                                      
+                          </div>                                                                                                                                                                       
+                                                                                                                                                                                                       
+                          <h3>Distribuição de Gastos</h3>                                                                                                                                              
+                          <ul class="expense-chart" id="expenseChart"></ul>                                                                                                                            
+                      </div>                                                                                                                                                                           
+                  </div>
+              </div>                                                                                                                                                                                   
+          </section>
+                                                                                                                                                                                                       
+          <section class="content-cards">                                                                                                                                                              
+              <div class="container">
+                  <h2 class="section-title">Dicas de Orçamento</h2>                                                                                                                                    
+                  <div class="cards-grid">                                                                                                                                                             
+                      <article class="content-card">                                                                                                                                                   
+                          <h3>Regra 50/30/20</h3>                                                                                                                                                      
+                          <p>Destine 50% da renda para necessidades, 30% para desejos e 20% para poupança e investimentos.</p>                                                                         
+                      </article>                                                                                                                                                                       
+                      <article class="content-card">                                                                                                                                                   
+                          <h3>Fundo de Emergência</h3>                                                                                                                                                 
+                          <p>Guarde de 3 a 6 meses de despesas essenciais para imprevistos antes de começar a investir.</p>                                                                            
+                      </article>                                                                                                                                                                       
+                      <article class="content-card">                                                                                                                                                   
+                          <h3>Revise Mensalmente</h3>                                                                                                                                                  
+                          <p>Revise seu orçamento todo mês para ajustar gastos, identificar desperdícios e acompanhar progresso.</p>                                                                   
+                      </article>                                                                                                                                                                       
+                  </div>                                                                                                                                                                               
+              </div>                                                                                                                                                                                   
+          </section>                                                                                                                                                                                   
+      </main>
+                                                                                                                                                                                                       
+      <footer class="footer">
+          <div class="container">                                                                                                                                                                      
+              <div class="footer-content">                                                                                                                                                             
+                  <div class="footer-section">                                                                                                                                                         
+                      <h3>Educação Financeira</h3>                                                                                                                                                     
+                      <p>Aprenda a administrar seu dinheiro e construir um futuro financeiro seguro.</p>                                                                                               
+                  </div>                                                                                                                                                                               
+                  <div class="footer-section">                                                                                                                                                         
+                      <h4>Menu</h4>                                                                                                                                                                    
+                      <ul>                                                                                                                                                                             
+                          <li><a href="index.html">Início</a></li>                                                                                                                                     
+                          <li><a href="budget.html">Orçamento</a></li>                                                                                                                                 
+                          <li><a href="invest.html">Investimentos</a></li>                                                                                                                             
+                          <li><a href="about.html">Sobre</a></li>                                                                                                                                      
+                          <li><a href="contact.html">Contato</a></li>                                                                                                                                  
+                      </ul>                                                                                                                                                                            
+                  </div>                                                                                                                                                                               
+                  <div class="footer-section">                                                                                                                                                         
+                      <h4>Recursos</h4>                                                                                                                                                                
+                      <ul>                                                                                                                                                                             
+                          <li><a href="#">Blog</a></li>                                                                                                                                                
+                          <li><a href="#">Calculadoras</a></li>                                                                                                                                        
+                          <li><a href="#">Ferramentas</a></li>                                                                                                                                         
+                          <li><a href="#">E-books</a></li>                                                                                                                                             
+                      </ul>                                                                                                                                                                            
+                  </div>                                                                                                                                                                               
+                  <div class="footer-section">                                                                                                                                                         
+                      <h4>Contato</h4>                                                                                                                                                                 
+                      <p>Email: contato@educacaofinanceira.com</p>                                                                                                                                     
+                      <p>Telefone: (11) 9999-9999</p>                                                                                                                                                  
+                  </div>                                                                                                                                                                               
+              </div>                                                                                                                                                                                   
+              <div class="footer-bottom">                                                                                                                                                              
+                  <p>&copy; 2026 Educação Financeira. Todos os direitos reservados.</p>
+              </div>                                                                                                                                                                                   
+          </div>  
+      </footer>                                                                                                                                                                                        
+                  
+      <script src="js/main.js"></script>                                                                                                                                                               
+      <script src="js/budget.js"></script>
+  </body>                                                                                                                                                                                              
+  </html>                                                                                                                                                                                              
+           
